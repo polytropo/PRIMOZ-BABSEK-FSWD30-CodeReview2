@@ -3,7 +3,9 @@
 <head>
 	<meta charset="utf-8">
 	<title>Price Comparison</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="style.css">
+	
 </head>
 <body>
 	<div class="container">
@@ -18,7 +20,18 @@
 			<div id="figureOne">
 				<figure class="fig1">
 					<img src="image/cr2-amsterdam.jpg">
-					<figcaption id="figCOne">Amsterdam 1189<br>Netherlands Average price</figcaption>
+					<figcaption id="figCOne">
+						<table>
+							<tr>
+								<td class="cityName" id="name1">Amsterdam</td>
+								<td id="avgPrice1td"><span id="avgPrice1"></span></td>
+							</tr>
+							<tr>
+								<td class="country sup" id="country1">netherlands</td>
+								<td class="avgRight">average price</td>
+							</tr>
+						</table>
+					</figcaption>
 				</figure>
 
 
@@ -27,12 +40,23 @@
 			<div id="figureTwo">
 				<figure class="fig2">
 					<img src="image/cr2-london.jpg">
-					<figcaption id="figCTwo">London 2360<br>United Kingdom average price</figcaption>
+					<figcaption id="figCTwo"><div><table>
+					<tr>
+						<td id="name2">London</td>
+						<td id="avgPrice2td"><span id="avgPrice2"></td>
+					</tr>
+					<tr>
+						<td id="country2">United Kingdom</td>
+						<td class="avgRight">average price</td>
+					</tr>
+				</table></figcaption>
 				</figure>
 			</div>
 			<div class="text">
-				<p id="paragraph">Amsterdam will be more affordable than london for the New Year's celebration.
+				<p id="paragraph"><span id="comparison1"></span> will be more affordable than <span id="comparison2"></span> for the New Year's celebration.
 				</p>
+				<p id = "abovePrice">Difference in Price:</p>
+				<p id="price"><span id="bestPrice">1171&euro;</span></p>
 			</div>
 
 		</div>
@@ -44,6 +68,6 @@
 
 
 	</div>
-	
+	<script type="text/javascript" src="js.js"></script>
 </body>
 </html>

@@ -1,8 +1,22 @@
 
 body {
-	display: inline-block;
+	/*display: inline-block;*/
 	width:100%;
+	font-family: 'Roboto Slab', serif;
+
+
+
 }
+h2 {
+	text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+	             0px 8px 13px rgba(0,0,0,0.1),
+	             0px 18px 23px rgba(0,0,0,0.1);
+}
+
+.text {
+	font-size: 1.3em;
+}
+
 .container {
 	max-width: 1000px;
 	min-width:360px;
@@ -18,7 +32,7 @@ body {
 
 img {
 	padding-left: 35px;
-	object-fit:contain;
+	/*object-fit:contain;*/
 	max-width: 75%;
 	max-height: 75%;
 	float: left;
@@ -26,17 +40,19 @@ img {
 }
 
 h2 {
-	overflow: auto;
+	/*overflow: auto;*/
 	display: block;
 	float:left;
-	padding-left:35px ;
+	padding-left:35px;
+	color: white;
 }
 
 
 #figureOne {
+	/*background-image:url(image/cr2-london.jpg);*/
 	float:left;
 	width: 45%;
-	
+	height: 300px;
 	
 	padding: 2.5% ;
 	
@@ -45,7 +61,7 @@ h2 {
 #figureTwo {
 	float:left;
 	width: 45%;
-	
+	height: 300px;
 
 	padding: 2.5%;
 	
@@ -53,20 +69,22 @@ h2 {
 
 .fig1, .fig2 {
 	
-	object-fit:contain;
-	max-width: 75%;
-	max-height: 75%;
+	/*object-fit:contain;*/
+/*	max-width: 100%;
+	max-height: 100%;*/
 	float: left;
-	padding-top: 10px;
+	/*padding-top: 10px;*/
+	
 	
 
 }
-figure img {
+/*figure img {
 	vertical-align:top;
-}
+}*/
 figure figcaption {
-	border: 1px dotted blue;
+	/*border: 1px dotted blue;*/
 	text-align: center;
+
 }
 
 /*.fig2 {
@@ -81,8 +99,84 @@ figure figcaption {
 */
 .text {
 	padding: 2.5%;
+	text-align: center;
+	
 }
 
 .main {
 	background-color: #e6eaec;
+	padding-left: 35px
+	/*without padding image shrinks out of place later!*/
+}
+
+.fig1 img, .fig2 img {
+	margin: 0;
+	padding: 0;
+
+
+}
+figure img {
+  box-shadow: 8px 8px 10px #aaa;
+  /*object-fit:cover;*/
+  width: 350px;
+  min-width:180px;
+}
+
+span#bestPrice{
+	border-radius:25px;
+	background-color: #0fa7d2;
+	/*margin: 5px;*/
+	padding: 6px 10px;
+	font-size: 2em;
+	color: white;
+	letter-spacing: 0.1em;
+}
+
+table { 
+	/*background-color: white;*/
+	padding-top: 15px;
+
+}
+
+
+
+
+span#avgPrice1, span#avgPrice2 {
+	border-radius:5px;
+	background-color: #0fa7d2;
+	/*margin: 5px;*/
+	padding: 2px 4px;
+	font-size: 1.1em;
+	color: white;
+	letter-spacing: 0.1em;
+}
+
+#name1, #name2, #country1, #country2 {
+	text-align:left;
+	width: 60%;
+}
+
+#avgPrice1td, #avgPrice2td, .avgRight {
+	text-align: right;
+	
+}
+
+/*#abovePrice{
+	padding-bottom: 1px;
+}
+*/
+#comparison1, #comparison2 {
+	border-radius:5px;
+	background-color:#0fa7d2;
+	font-style: italic;
+}
+
+/*#paragraph {
+	padding-top:15px;
+	margin-top:20px;
+}*/
+
+#country1, #country2, .avgRight {
+	font-size: 0.9em;
+	font-weight: lighter
 }
