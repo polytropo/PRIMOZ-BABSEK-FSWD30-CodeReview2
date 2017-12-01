@@ -1,5 +1,8 @@
 
-
+body {
+	display: inline-block;
+	width:100%;
+}
 .container {
 	max-width: 1000px;
 	min-width:360px;
@@ -9,8 +12,7 @@
 .header {
 	background-color: #0c3977;
 	height: 75px;
-	
-	
+
 	
 }
 
@@ -30,3 +32,57 @@ h2 {
 	padding-left:35px ;
 }
 
+
+#figureOne {
+	float:left;
+	width: 45%;
+	
+	
+	padding: 2.5% ;
+	
+}
+
+#figureTwo {
+	float:left;
+	width: 45%;
+	
+
+	padding: 2.5%;
+	
+}
+
+.fig1, .fig2 {
+	
+	object-fit:contain;
+	max-width: 75%;
+	max-height: 75%;
+	float: left;
+	padding-top: 10px;
+	
+
+}
+figure img {
+	vertical-align:top;
+}
+figure figcaption {
+	border: 1px dotted blue;
+	text-align: center;
+}
+
+/*.fig2 {
+	
+	object-fit:contain;
+	max-width: 75%;
+	max-height: 75%;
+	float: left;
+	padding-top: 10px;
+
+}
+*/
+.text {
+	padding: 2.5%;
+}
+
+.main {
+	background-color: #e6eaec;
+}
