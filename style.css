@@ -1,3 +1,42 @@
+@media only screen and (max-width: 600px){
+    #figureOne {
+    clear: both;
+	/*background-image:url(image/cr2-london.jpg);*/
+	
+	width: 100%;
+	
+	
+	position: static;
+	margin-top: -20px;
+	
+}
+
+body {
+	background-color: #e6eaec;
+}
+
+#figureTwo {
+	clear: both;
+	width: 100%;
+	margin-top: -40px;
+	padding: 2.5%;
+	position: static;
+}
+
+
+
+.text {
+	float:right;
+	margin-top: -50px;
+	
+	
+}
+
+  
+    }
+
+
+
 
 body {
 	/*display: inline-block;*/
