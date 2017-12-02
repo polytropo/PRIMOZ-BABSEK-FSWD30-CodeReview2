@@ -1,52 +1,50 @@
+/*------Mobile and small window size -------
+*/
 @media only screen and (max-width: 600px){
     #figureOne {
     clear: both;
-	/*background-image:url(image/cr2-london.jpg);*/
-	
 	width: 100%;
-	
-	
 	position: static;
 	margin-top: -20px;
-	
-}
+	}
+
+	.container {
+		margin: auto
+	}
+
+	body {
+		background-color: #e6eaec;
+		max-width: 350px;
+		min-width:300px;
+	}
+
+	#figureTwo {
+		clear: both;
+		width: 100%;
+		margin-top: -40px;
+		padding: 2.5%;
+		position: static;
+	}
+
+	.text {
+		max-width:300px;
+		float:right;
+		margin-top: -60px;
+		margin-right:50px;	
+	}
+}	
+
+
+/*---------Normal Page Layout------------*/
+
 
 body {
-	background-color: #e6eaec;
-}
-
-#figureTwo {
-	clear: both;
-	width: 100%;
-	margin-top: -40px;
-	padding: 2.5%;
-	position: static;
-}
-
-
-
-.text {
-	float:right;
-	margin-top: -50px;
-	
-	
-}
-
-  
-    }
-
-
-
-
-body {
-	/*display: inline-block;*/
 	width:100%;
 	font-family: 'Roboto Slab', serif;
 
-
-
 }
-h2, #bestPrice, #comparison1, #comparison2, #avgPrice1, #avgPrice2, #name1, #name2 {
+
+h2, #bestPrice, #avgPrice1, #avgPrice2, #name1, #name2 {
 	text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
 	             0px 8px 13px rgba(0,0,0,0.1),
 	             0px 18px 23px rgba(0,0,0,0.1);
@@ -59,19 +57,15 @@ h2, #bestPrice, #comparison1, #comparison2, #avgPrice1, #avgPrice2, #name1, #nam
 .container {
 	max-width: 1000px;
 	min-width:360px;
-	
 }
 
 .header {
 	background-color: #0c3977;
-	height: 75px;
-
-	
+	height: 75px;	
 }
 
 img {
 	padding-left: 35px;
-	/*object-fit:contain;*/
 	max-width: 75%;
 	max-height: 75%;
 	float: left;
@@ -79,7 +73,6 @@ img {
 }
 
 h2 {
-	/*overflow: auto;*/
 	display: block;
 	float:left;
 	padding-left:35px;
@@ -88,75 +81,44 @@ h2 {
 
 
 #figureOne {
-	/*background-image:url(image/cr2-london.jpg);*/
 	float:left;
 	width: 45%;
 	height: 300px;
-	
 	padding: 2.5% ;
-	
 }
 
 #figureTwo {
 	float:left;
 	width: 45%;
 	height: 300px;
-
 	padding: 2.5%;
-	
 }
 
 .fig1, .fig2 {
-	
-	/*object-fit:contain;*/
-/*	max-width: 100%;
-	max-height: 100%;*/
 	float: left;
-	/*padding-top: 10px;*/
-	
-	
-
 }
-/*figure img {
-	vertical-align:top;
-}*/
+
 figure figcaption {
-	/*border: 1px dotted blue;*/
 	text-align: center;
-
 }
 
-/*.fig2 {
-	
-	object-fit:contain;
-	max-width: 75%;
-	max-height: 75%;
-	float: left;
-	padding-top: 10px;
-
-}
-*/
 .text {
 	padding: 2.5%;
 	text-align: center;
-	
 }
 
 .main {
 	background-color: #e6eaec;
 	padding-left: 35px
-	/*without padding image shrinks out of place later!*/
 }
 
 .fig1 img, .fig2 img {
 	margin: 0;
 	padding: 0;
-
-
 }
+
 figure img {
   box-shadow: 8px 8px 10px #aaa;
-  /*object-fit:cover;*/
   width: 350px;
   min-width:180px;
 }
@@ -164,7 +126,6 @@ figure img {
 span#bestPrice{
 	border-radius:25px;
 	background-color: #0fa7d2;
-	/*margin: 5px;*/
 	padding: 6px 10px;
 	font-size: 2em;
 	color: white;
@@ -172,18 +133,13 @@ span#bestPrice{
 }
 
 table { 
-	/*background-color: white;*/
 	padding-top: 15px;
 
 }
 
-
-
-
 span#avgPrice1, span#avgPrice2 {
 	border-radius:5px;
 	background-color: #0fa7d2;
-	/*margin: 5px;*/
 	padding: 2px 4px;
 	font-size: 1.1em;
 	color: white;
@@ -197,23 +153,13 @@ span#avgPrice1, span#avgPrice2 {
 
 #avgPrice1td, #avgPrice2td, .avgRight {
 	text-align: right;
-	
 }
 
-/*#abovePrice{
-	padding-bottom: 1px;
-}
-*/
 #comparison1, #comparison2 {
 	border-radius:5px;
 	background-color:#0fa7d2;
 	font-style: italic;
 }
-
-/*#paragraph {
-	padding-top:15px;
-	margin-top:20px;
-}*/
 
 #country1, #country2, .avgRight {
 	font-size: 0.9em;
